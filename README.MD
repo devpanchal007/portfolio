@@ -33,7 +33,7 @@ Welcome to **My Portfolio**! This is my personal portfolio for showcasing my ski
 
 ## 📂 **Directory Structure**
 ```
-└── decodewithdeepak-portfolio/
+└── devpanchal-portfolio/
     ├── README.MD
     ├── LICENSE
     ├── eslint.config.js
