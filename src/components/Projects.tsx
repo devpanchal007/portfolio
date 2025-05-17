@@ -67,8 +67,8 @@ const projects = [
     title: 'Portfolio',
     description: 'A personal portfolio website showcasing projects, skills, blogs, and contact section with responsive design and modern UI/UX styling.',
     image: '/assets/portfolio.png',
-    link: '#',
-    github: '#',
+    link: 'https://devpanchalportfolio.netlify.app/',
+    github: 'https://github.com/devpanchal007/portfolio',
     techStack: [
       techStacks.next,
       techStacks.react,
