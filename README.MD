@@ -1,8 +1,7 @@
-# Deepak Modi - Portfolio Website for a Full Stack Developer
+# Dev Panchal - Portfolio Website for a Frontend web Developer
 
 Welcome to **My Portfolio**! This is my personal portfolio for showcasing my skills, projects, experience, education, certifications, and more. It’s built using React, TypeScript, Tailwind CSS, and other modern web technologies. It fetches data from various APIs to display the latest information, such as GitHub repositories, LeetCode submissions, and blogs. The portfolio is responsive, interactive, and optimized for performance.
 
-Check it out live at: [https://deepakmodi.vercel.app/](https://deepakmodi.vercel.app/)
 
 ---
 
@@ -111,28 +110,6 @@ Check it out live at: [https://deepakmodi.vercel.app/](https://deepakmodi.vercel
 
 ---
 
-## 📸 Screenshots
-
-Here’s a glimpse of the portfolio:
-
-![Home Screenshot](./public/assets/portfolio.png)
-
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
----
-
-## 📬 Contact
-
-Feel free to reach out to me through any of the following channels:
-
-- **Email**: [deepakmodi8676@gmail.com](mailto:deepakmodi8676@gmail.com)
-- **LinkedIn**: [linkedin.com/in/deepakmodi1](https://linkedin.com/in/deepakmodi1)
-- **Website**: [deepakmodi.vercel.app](https://deepakmodi.vercel.app)
-
----
-
-### 🔥 Made with ❤️ by **Deepak Modi**
+### 🔥 Made with ❤️ by **Dev Panchal**

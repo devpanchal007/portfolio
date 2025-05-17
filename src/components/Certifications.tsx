@@ -1,69 +1,88 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
-import { SectionTitle } from "./ui/SectionTitle";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { CertificationCard } from "./ui/CertificationCard";
+import { SectionTitle } from "./ui/SectionTitle";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const certifications = [
   {
-    title: "Generative AI",
-    issuer: "Microsoft & LinkedIn",
-    date: "Nov 2023",
-    link: "https://www.linkedin.com/learning/certificates/4b0455567c3cfda25e8ef1896c3639f05112af66ace4292ed1004466ef830c94",
-    image: "https://media.licdn.com/dms/image/v2/D4D22AQH9Bl60mLooEA/feedshare-shrink_1280/feedshare-shrink_1280/0/1693230478401?e=2147483647&v=beta&t=D95AvRlyCt7mPdJFFCCtaIbkvxz_EcmG0CAReYysB_E",
+    id: 1,
+    title: "Python",
+    issuer: "Hackerrank",
+    date: "May 2025",
+    link: "https://www.hackerrank.com/certificates/16feb96a03d5",
+    image: "./assets/python.png",
   },
   {
-    title: "Python 3 Ultimate Guide",
+    id: 2,
+    title: "Frontend Learning",
     issuer: "Udemy",
-    date: "Oct 2023",
-    link: "https://www.udemy.com/certificate/UC-35cedd32-ccc1-4377-b9ef-e8fabda1f457/",
-    image: "https://udemy-certificate.s3.amazonaws.com/image/UC-35cedd32-ccc1-4377-b9ef-e8fabda1f457.jpg?v=1697713760000",
+    date: "May 2025",
+    link: "https://www.udemy.com/certificate/UC-c547a575-5251-402c-94ea-2442b2251b26/",
+    image: "/assets/udemy.jpg",
   },
   {
-    title: "PW Backend Development Course",
-    issuer: "Physics Wallah",
-    date: "Mar 2024",
-    link: "https://pwskills.com/learn/certificate/1e3f9e1e-9108-4685-bfa0-6325856f3823/",
-    image: "https://i.ibb.co/gMvXCmVQ/1e3f9e1e-9108-4685-bfa0-6325856f3823-1.png",
-  },
-  {
-    title: "JAVA Course - Mastering the Fundamentals",
-    issuer: "Scaler",
-    date: "Mar 2024",
-    link: "https://moonshot.scaler.com/s/image/li/8T4eLNJyeF",
-    image: "https://moonshot.scaler.com/s/image/li/8T4eLNJyeF?scope=body",
+    id: 3,
+    title: "SQL",
+    issuer: "hackerank",
+    date: "May 2025",
+    link: "https://www.hackerrank.com/certificates/b43a030dd37f",
+    image: "/assets/sql.png",
   },
 ];
 
 export function Certifications() {
+  const sliderRef = useRef<Slider>(null);
+
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
+    speed: 600,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
-    pauseOnHover: true,
-    
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
-    ],
+    autoplaySpeed: 3000,
+    arrows: false,
   };
 
   return (
-    <section id="certifications" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto px-8">
+    <section id="certifications" className="py-20 bg-gray-50 dark:bg-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle>Certifications</SectionTitle>
-        <Slider {...settings} className="max-w-6xl mx-auto">
-          {certifications.map((cert) => (
-            <div key={cert.title} className="px-4">
-              <CertificationCard {...cert} />
-            </div>
-          ))}
-        </Slider>
+
+        {/* Navigation + Slider in a flex row */}
+        <div className="flex justify-center items-center gap-4 mt-10">
+          {/* Previous Button */}
+          <button
+            onClick={() => sliderRef.current?.slickPrev()}
+            className="bg-white dark:bg-gray-800 p-3 rounded-full shadow hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            aria-label="Previous"
+          >
+            <ChevronLeft className="w-6 h-6 text-blue-600" />
+          </button>
+
+          {/* Slider */}
+          <div className="w-[320px] sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]">
+            <Slider ref={sliderRef} {...settings}>
+              {certifications.map((cert) => (
+                <div key={cert.id} className="px-2">
+                  <CertificationCard {...cert} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={() => sliderRef.current?.slickNext()}
+            className="bg-white dark:bg-gray-800 p-3 rounded-full shadow hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            aria-label="Next"
+          >
+            <ChevronRight className="w-6 h-6 text-blue-600" />
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -11,12 +11,12 @@ interface CertificationCardProps {
 
 export function CertificationCard({ title, issuer, date, link, image }: CertificationCardProps) {
   return (
-    <div className="relative bg-white dark:bg-gray-900 rounded-lg shadow-xl transition-transform duration-300 overflow-hidden group">
+    <div className="relative w-full aspect-square bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden group transition-transform duration-300">
       {/* Background Image */}
       <img
         src={image}
         alt={`${title} certification`}
-        className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105"
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
 
       {/* Overlay */}

@@ -53,17 +53,20 @@ export function Hero() {
           {/* Right Column - Profile Image */}
           <div className="relative order-1 md:order-2">
             {/* Floating solid circular elements */}
-            <div className="absolute w-24 h-24 bg-blue-600 top-0 left-0 rounded-full animate-floating" />
+            {/* <div className="absolute w-24 h-24 bg-blue-600 top-0 left-0 rounded-full animate-floating" /> */}
             <div className="absolute w-24 h-24 bg-purple-600 bottom-0 right-0 rounded-full animate-floating delay-150" />
             <div className="absolute w-20 h-20 bg-green-500 top-4 right-4 rounded-full animate-floating delay-300" />
             <div className="absolute w-20 h-20 bg-yellow-500 bottom-4 left-4 rounded-full animate-floating delay-450" />
 
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" />
-            <img
-              src="/assets/profile.jpg"
-              alt="Dev Panchal"
-              className="relative w-[50%] mx-auto rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-500"
-            />
+            <div className="">
+              <img
+                src="./assets/dev.jpg"
+                alt="Dev Panchal"
+                className="relative w-[50%]  rounded-md  transform hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
           </div>
 
         </div>

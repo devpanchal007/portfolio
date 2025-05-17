@@ -37,11 +37,11 @@ const techStacks = {
 // Define projects data
 const projects = [
   {
-    title: 'NotesNeo',
+    title: 'NotesNeolearn',
     description: 'A notes sharing platform for university students with subject-wise notes, authentication, and personalised user dashboard to manage uploaded content.',
-    image: '/assets/notesneo.webp',
-    link: 'https://notesneo.vercel.app',
-    github: 'https://github.com/decodewithdeepak/notesneo',
+    image: '/assets/notes.png',
+    link: 'https://noteslearning.netlify.app/',
+    github: 'https://github.com/devpanchal007/notes',
     techStack: [
       techStacks.react,
       techStacks.tailwind,
@@ -50,11 +50,11 @@ const projects = [
     ],
   },
   {
-    title: 'NeoCode',
+    title: 'LearnDsa',
     description: 'A coding platform with curated DSA sheets, roadmaps, CS articles, and an integrated compiler to help students practice and learn better.',
-    image: '/assets/neocode.webp',
-    link: 'https://neocoding.vercel.app',
-    github: 'https://github.com/decodewithdeepak/neocode',
+    image: '/assets/learndsa.png',
+    link: 'https://learndsasde.netlify.app/',
+    github: 'https://github.com/devpanchal007/learningdsa',
     techStack: [
       techStacks.react,
       techStacks.tailwind,
@@ -66,7 +66,7 @@ const projects = [
   {
     title: 'Portfolio',
     description: 'A personal portfolio website showcasing projects, skills, blogs, and contact section with responsive design and modern UI/UX styling.',
-    image: '/assets/portfolio.webp',
+    image: '/assets/portfolio.png',
     link: '#',
     github: '#',
     techStack: [
@@ -75,49 +75,6 @@ const projects = [
       techStacks.typescript,
       techStacks.tailwind,
       techStacks.framer,
-    ],
-  },
-  {
-    title: 'NeoLearn',
-    description: 'An online AI learning platform with courses, quizzes, and user authentication. Users can track progress and manage their learning journey.',
-    image: '/assets/neolearn.webp',
-    link: '#',
-    github: '#',
-    techStack: [
-      techStacks.react,
-      techStacks.typescript,
-      techStacks.tailwind,
-      techStacks.appwrite,
-      techStacks.framer,
-    ],
-  },
-  
-  {
-    title: 'NeoFolio',
-    description: 'A portfolio website template for developers, showcasing projects and skills. Built with modern web technologies for easy customization.',
-    image: '/assets/neofolio.webp',
-    link: 'https://neofolio.vercel.app',
-    github: 'https://github.com/decodewithdeepak/neofolio',
-    techStack: [
-      techStacks.react,
-      techStacks.typescript,
-      techStacks.tailwind,
-      techStacks.firebase,
-      techStacks.framer,
-    ],
-  },
- 
-  {
-    title: 'NeoChat',
-    description: 'A real-time chat application using WebSockets, supporting private and group messaging, typing indicators, and clean UI for all devices.',
-    image: '/assets/neochat.webp',
-    github: 'https://github.com/decodewithdeepak/neochat',
-    techStack: [
-      techStacks.next,
-      techStacks.typescript,
-      techStacks.tailwind,
-      techStacks.socket,
-      techStacks.mongodb,
     ],
   },
   
